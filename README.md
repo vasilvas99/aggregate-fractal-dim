@@ -1,6 +1,6 @@
 # Calculate fractal dimension of an aggregate
 
-##Usage
+## Usage
 
 ```shell
 $ aggregate-fractal-dim --help
@@ -19,3 +19,5 @@ Options:
 ```
 
 ## Binaries
+
+Get pre-built binaries from the releases section: [Releases](https://github.com/vasilvas99/aggregate-fractal-dim/releases)
