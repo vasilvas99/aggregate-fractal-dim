@@ -33,9 +33,12 @@ dependencies = [
  "clap",
  "csv",
  "fractal-analysis",
+ "lindel",
  "morton-encoding",
  "ndarray",
  "npyz",
+ "num 0.4.1",
+ "rayon",
  "serde",
 ]
 
@@ -385,7 +388,7 @@ dependencies = [
  "itertools",
  "lindel",
  "morton-encoding",
- "num",
+ "num 0.2.1",
  "num-traits 0.2.17",
  "rayon",
 ]
@@ -506,7 +509,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e049ba2901c1380bbc3d9a10646d1eea9a478ec72e8de8cabb6d67e589aca99c"
 dependencies = [
  "morton-encoding",
- "num",
+ "num 0.2.1",
  "num-traits 0.2.17",
 ]
 
@@ -556,7 +559,7 @@ version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f66c953d92a578cd98a4598021e3b473520d214665917eb51dba49dc227936c8"
 dependencies = [
- "num",
+ "num 0.2.1",
  "num-traits 0.2.17",
 ]
 
@@ -596,6 +599,20 @@ dependencies = [
  "num-integer",
  "num-iter",
  "num-rational 0.2.4",
+ "num-traits 0.2.17",
+]
+
+[[package]]
+name = "num"
+version = "0.4.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b05180d69e3da0e530ba2a1dae5110317e49e3b7f3d41be227dc5f92e49ee7af"
+dependencies = [
+ "num-bigint 0.4.4",
+ "num-complex 0.4.4",
+ "num-integer",
+ "num-iter",
+ "num-rational 0.4.1",
  "num-traits 0.2.17",
 ]
 
@@ -679,6 +696,18 @@ checksum = "5c000134b5dbf44adc5cb772486d335293351644b801551abe8f75c84cfa4aef"
 dependencies = [
  "autocfg",
  "num-bigint 0.2.6",
+ "num-integer",
+ "num-traits 0.2.17",
+]
+
+[[package]]
+name = "num-rational"
+version = "0.4.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0638a1c9d0a3c0914158145bc76cff373a75a627e6ecbfb71cbe6f453a5a19b0"
+dependencies = [
+ "autocfg",
+ "num-bigint 0.4.4",
  "num-integer",
  "num-traits 0.2.17",
 ]
